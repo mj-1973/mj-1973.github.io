@@ -112,6 +112,17 @@
     $(window).on('resize', function () {
         autoHideMenus();
     });
+    
+    // add window scroll event (!! it doesn't work)
+    $(window).on('scroll', function(){
+        let pos = $('body, html').scrollTop();    // get body position
+	if( pos > 0 )				  // if scroll
+	{
+	    $('#header').addClass('header-nav-active')
+	} else {
+	    $('#header').removeClass('header-nav-active')
+	}
+    })
 
     // Fold second-level menu
     $('.main-nav-list-item').hover(function () {
