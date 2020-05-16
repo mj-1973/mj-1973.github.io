@@ -345,19 +345,16 @@ code {
 #main .main-body-content:after {
   clear: both;
 }
-#header,
-#    background: color-header-background url(images/background_head.jpg) {
+#header {
+  background: #26272b;
   position: relative;
   width: 100%;
   z-index: 999;
 }
-#header .header-nav-active,
-#    background: color-header-background url(images/background_head.jpg) .header-nav-active {
+#header.header-nav-active {
   position: fixed;
   top: 0;
 }
-#    background-size: cover,
-#    padding-bottom: nav-height,
 #header-outer {
   height: 100%;
   position: relative;
@@ -724,6 +721,10 @@ code {
   font-size: 0.9em;
   color: #777;
   border-radius: 3px;
+}
+.widget .widget-desc {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
 }
 .widget a {
   text-decoration: none;
@@ -1679,7 +1680,7 @@ a.article-title:hover {
 }
 #footer #footer-nav-list li {
   float: left;
-  border-right: 1px;
+  border-right: 2px #808080 solid;
 }
 #footer #footer-nav-list li a {
   line-height: 20px;
